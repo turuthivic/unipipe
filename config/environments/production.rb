@@ -81,9 +81,10 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  config.web_socket_server_url = "wss://unipipe.herokuapp.com/cable" 
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
-
+  # config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+  config.action_cable.allowed_request_origins = ['http://unipipe.herokuapp.com', 'https://unipipe.herokuapp.com']
 end
