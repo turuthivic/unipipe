@@ -1,0 +1,36 @@
+<div class="signup" id="signup" style="padding-top: 0 !important;">
+	<div class="container">
+	<div class="head-top-w3ls"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+		<h5 class="title-w3">Play, Explore and Learn.</h5>
+		  <h1>Welcome to Unipipe
+			<%if current_user%>
+			    <%= current_user.username.capitalize%>
+		   <% else %>
+		   		new user
+			   </h1>
+		   <% end %>
+		  <p>The platform for university discussions</p>	
+		  <%if current_user%>
+		    <p><%= link_to "Create", new_chatroom_path, :class => 'btn btn-default' %> a new chatroom or
+		    <%= link_to "join", chatrooms_path, :class => 'btn btn-default' %> an existing chatroom</p>
+		  <% else %>
+			<div class="button2">
+			  <h5><%= link_to "sign up now", new_user_registration_path %> then browse existing rooms to start chatting.</h5>
+			</div>
+		  <%end%>		
+	</div>
+		
+</div>
+<!-- gallery -->
+<div class="gallery" id="gallery">
+<div>
+<div class="head-top-w3ls"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+			<h5 class="title-w3">unipipe</h5>
+			<div style="font-size: 25px;">
+			<p><center><b>An online university discussion group forum of various disciplines.</p>
+			<p>Free subscription and registeration of users.</p>
+			<p>With unipipe you can discuss any arising topic and also take part in group chat as well as on on one with tutors.</b></center></p>
+			</div>
+</div>
+</div>
+	<!-- //gallery -->

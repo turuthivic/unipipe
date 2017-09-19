@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root "welcome#about"
+  root "welcome#home"
+  get 'welcome/about'
+  get 'welcome/contact'
   
   get '/signup', to: "registrations#new"
   post '/signup', to: "registrations#create"

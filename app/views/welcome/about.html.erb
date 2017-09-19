@@ -1,9 +1,17 @@
-<div class="jumbotron">
-  <h1>Welcome to Unipipe!</h1>
-  <p>The platform for university discussions</p>
-  <%if current_user%>
-    <p><span class="glyphicon glyphicon-heart"></span> Nice to see you, <%= current_user.username%> <span class="glyphicon glyphicon-heart"></span></p>
-  <%end%>
-  <p>Sign up or log in, then browse existing rooms to start chatting.</p>
+<div class="row col-md-8 col-md-offset-2" id="chatroom-title">
+  <h1>Chatrooms</h1>
 </div>
 
+<div class="row col-md-8 col-md-offset-2" id="chatrooms">
+  <%= render partial: 'chatroom_form', locals: {chatroom: @chatroom} %>
+  <div id="chatroom-errors">
+    
+  </div>
+    <ul id="chatroom-index"> 
+  <% if @chatrooms.any? %>
+      <%= render @chatrooms%>
+  <%else %>
+    </ul>
+    <p>Be the first one to make a chatroom!</p>
+  <% end %>
+</div>
