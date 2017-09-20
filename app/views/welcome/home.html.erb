@@ -1,23 +1,104 @@
-<div class="signup" id="signup" style="padding-top: 0 !important;">
-	<div class="container">
-	<div class="head-top-w3ls"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-		<h5 class="title-w3">Play, Explore and Learn.</h5>
-		  <h1>Welcome to Unipipe,
-			<%if current_user%>
-			    <%= current_user.username.capitalize%>
-		   <% else %>
-		   		new user
-			   </h1>
-		   <% end %>
-		  <p>The platform for university discussions</p>	
-		  <%if current_user%>
-		    <%= link_to "join", chatrooms_path %> an existing chatroom</p>
-		  <% else %>
-			<div class="button2">
-			  <h5><%= link_to "sign up now", signup_path %>
-			  </div>
-			  then browse existing rooms to start chatting.</h5>
-		  <%end%>		
+<!-- Main -->
+<section id="main" class="container">
+
+	<section class="box special">
+		<header class="major">
+			<h2>Introducing the online university discussion platform
+			<br />
+			for you</h2>
+			<p>This platform will enable you to achieve and share your knowledge in anyfield<br />
+			& most importantly is that the platform is free to use.</p>
+		</header>
+		<span class="image featured"><%= image_tag("pic01.jpg") %></span>
+	</section>
+
+	<section class="box special features">
+		<div class="features-row">
+			<section id="mdical">
+				<span class="icon major fa-bolt accent2"></span>
+				<h3>Medical Field</h3>
+				<p>Medicine is the science and practice of the diagnosis, treatment, and prevention of disease. Medicine encompasses a variety of health care practices evolved.
+				<br>
+				<br>
+					<a href="#" class="button alt">More details</a>
+				</p>
+			</section>
+			<section id="engineering">
+				<span class="icon major fa-area-chart accent3"></span>
+				<h3>Engineering Field</h3>
+				<p>Engineering is the application of mathematics, as well as scientific, economic, social, and practical knowledge to invent, innovate.
+				<br>
+				<br>
+					<a href="#" class="button alt">More details</a>
+				</p>
+			</section>
+		</div>
+		<div class="features-row">
+			<section id="computing">
+				<span class="icon major fa-cloud accent4"></span>
+				<h3>Computing & IT</h3>
+				<p>Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers.
+				<br>
+				<br>
+					<a href="#" class="button alt">More details</a>
+				</p>
+			</section>
+			<section  id="accounting">
+				<span class="icon major fa-lock accent5"></span>
+				<h3>Accounting </h3> 
+				<p>Accounting or accountancy is the measurement, processing, and communication of financial information about economic entities such as businesses and corporations
+				<br>
+				<br>
+					<a href="#" class="button alt">More details</a>
+				</p>
+			</section>
+		</div>
+	</section>
+
+	<div class="row">
+		<div class="6u 12u(narrower)">
+
+			<section class="box special">
+				<span class="image featured"><%= image_tag("pic02.jpg") %></span>
+				<h3>Unipipe - Chatplatform</h3>
+				<p>This is the best online university discussion forumn open to every anybody.</p>
+				<ul class="actions">
+					<li><a href="#" class="button alt">Learn More</a></li>
+				</ul>
+			</section>
+
+		</div>
+		<div class="6u 12u(narrower)">
+
+			<section class="box special">
+				<span class="image featured"><%= image_tag("pic03.jpg") %></span>
+				<h3>Unipipe - Archive patform</h3>
+				<p>Here you can achieve your research but rstricting the people who can assest them.</p>
+				<ul class="actions">
+					<li><a href="#" class="button alt">Learn More</a></li>
+				</ul>
+			</section>
+
+		</div>
 	</div>
-		
-</div>
+
+</section>
+
+<!-- CTA -->
+<section id="cta">
+
+	<h2>Sign up for free to get startup</h2>
+	<h3><b>Play,  Explore  &  Learn</b></h3>
+
+	<form>
+		<div class="row uniform 50%">
+			<div class="8u 12u(mobilep)">
+				<input type="email" name="email" id="email" placeholder="Email Address" />
+			</div>
+			<div class="4u 12u(mobilep)">
+				<input type="submit" value="Sign Up" class="fit" />
+			</div>
+		</div>
+	</form>
+
+</section>
