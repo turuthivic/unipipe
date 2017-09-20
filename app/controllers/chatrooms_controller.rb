@@ -1,5 +1,5 @@
 class ChatroomsController < ApplicationController
-
+  layout 'chatroom', only: [:index, :show]
   def index
     @chatroom = Chatroom.new
     @chatrooms = Chatroom.all
