@@ -59,11 +59,11 @@
 			<section id="computing">
 				<span class="icon major fa-cloud accent4"></span>
 				<% if current_user %>
-				<h3><%= link_to "Computing & IT", Chatroom.third %></h3>
+				<h3><%= link_to "Accounting", Chatroom.third %></h3>
 				<% else %>
-				<h3><%= link_to "Computing & IT", signup_path %></h3>
+				<h3><%= link_to "Accounting", signup_path %></h3>
 				<% end %>
-				<p>Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers.
+				<p>Accounting or accountancy is the measurement, processing, and communication of financial information about economic entities such as businesses and corporations
 				<br>
 				<br>
 					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
@@ -72,12 +72,13 @@
 			<section  id="accounting">
 				<span class="icon major fa-lock accent5"></span>
 				<% if current_user %>
-				<h3><%= link_to "Accounting", Chatroom.fourth %></h3>
+				<h3><%= link_to "Computing & IT", Chatroom.fourth %></h3>
 				<% else %>
-				<h3><%= link_to "Accounting", signup_path %></h3>
+				<h3><%= link_to "Computing & IT", signup_path %></h3>
 				<% end %>
 				<h3>Accounting </h3> 
-				<p>Accounting or accountancy is the measurement, processing, and communication of financial information about economic entities such as businesses and corporations
+				<p>
+				Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers.
 				<br>
 				<br>
 					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
