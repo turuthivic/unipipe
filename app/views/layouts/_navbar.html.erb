@@ -1,7 +1,7 @@
 <div id="page-wrapper">
 <!-- Header -->
 <header id="header">
-  <h1><a href="index.html">Unipipe</a></h1>
+  <h1><%= link_to "Unipipe", root_path %></h1>
   <nav id="nav">
     <ul>
       <li><%= link_to "Home", root_path %></li>
@@ -11,7 +11,12 @@
       <li>
         <%= link_to "Contact Us", welcome_contact_path, :class => 'icon' %>
       </li>
-      <li><%= link_to "Sign Up", login_path, :class => 'button' %></li>
+      <% if current_user %>
+      <li><%= link_to "Log out", logout_path, method: "delete" %></li>
+      <% else %>
+      <li><%= link_to "Sign Up", signup_path, :class => 'button' %>  | </li>
+      <li><%= link_to "Log in", login_path, :class => 'button' %></li>
+      <% end %>
     </ul>
   </nav>
 </header>

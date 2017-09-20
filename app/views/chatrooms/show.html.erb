@@ -1,4 +1,4 @@
-<div class="row col-md-8 col-md-offset-2">
+<div style="padding-top: 40px;">
   <h1><%= @chatroom.topic %></h1>
 
 <div class="panel panel-default">
@@ -15,4 +15,3 @@
 
   <%= render partial: 'messages/message_form', locals: {message: @message, chatroom: @chatroom}%>
 </div>
-<div style="padding-bottom: 50px"></div>
