@@ -1,8 +1,9 @@
 class WelcomeController < ApplicationController
 
   skip_before_action :authenticate_user!
+  layout 'home', only:[:home]
 
-  def about
+  def home
    
   end
 end

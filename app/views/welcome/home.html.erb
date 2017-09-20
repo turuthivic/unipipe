@@ -1,6 +1,16 @@
 <!-- Main -->
-<section id="main" class="container">
+<!-- Banner -->
+<section id="banner">
+  <h2>Unipipe</h2>
+  <p>This is an online university pocket platform.</p>
+  <p>Here You can discuss any academic related field you are Interested in.</p>
+  <ul class="actions">
+    <li><%= link_to "Sign Up", signup_path, :class => "button special" %></li>
+    <li><%= link_to "Learn More", chatrooms_path, :class => "button" %></li>
+  </ul>
+</section>
 
+<section id="main" class="container">
 	<section class="box special">
 		<header class="major">
 			<h2>Introducing the online university discussion platform
@@ -20,7 +30,7 @@
 				<p>Medicine is the science and practice of the diagnosis, treatment, and prevention of disease. Medicine encompasses a variety of health care practices evolved.
 				<br>
 				<br>
-					<a href="#" class="button alt">More details</a>
+					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
 				</p>
 			</section>
 			<section id="engineering">
@@ -29,7 +39,7 @@
 				<p>Engineering is the application of mathematics, as well as scientific, economic, social, and practical knowledge to invent, innovate.
 				<br>
 				<br>
-					<a href="#" class="button alt">More details</a>
+					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
 				</p>
 			</section>
 		</div>
@@ -40,7 +50,7 @@
 				<p>Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers.
 				<br>
 				<br>
-					<a href="#" class="button alt">More details</a>
+					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
 				</p>
 			</section>
 			<section  id="accounting">
@@ -49,7 +59,7 @@
 				<p>Accounting or accountancy is the measurement, processing, and communication of financial information about economic entities such as businesses and corporations
 				<br>
 				<br>
-					<a href="#" class="button alt">More details</a>
+					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
 				</p>
 			</section>
 		</div>
@@ -63,7 +73,7 @@
 				<h3>Unipipe - Chatplatform</h3>
 				<p>This is the best online university discussion forumn open to every anybody.</p>
 				<ul class="actions">
-					<li><a href="#" class="button alt">Learn More</a></li>
+					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
 				</ul>
 			</section>
 
@@ -75,7 +85,7 @@
 				<h3>Unipipe - Archive patform</h3>
 				<p>Here you can achieve your research but rstricting the people who can assest them.</p>
 				<ul class="actions">
-					<li><a href="#" class="button alt">Learn More</a></li>
+					<li><%= link_to "Learn more", chatrooms_path, :class => 'button alt' %></li>
 				</ul>
 			</section>
 
@@ -87,7 +97,7 @@
 <!-- CTA -->
 <section id="cta">
 
-	<h2>Sign up for free to get startup</h2>
+	<h2>Sign up for free to get started</h2>
 	<h3><b>Play,  Explore  &  Learn</b></h3>
 
 	<form>
