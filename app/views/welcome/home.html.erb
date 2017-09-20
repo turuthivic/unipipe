@@ -26,7 +26,11 @@
 		<div class="features-row">
 			<section id="mdical">
 				<span class="icon major fa-bolt accent2"></span>
-				<h3>Medical Field</h3>
+				<% if current_user %>
+				<h3><%= link_to "Medical Field", Chatroom.first %></h3>
+				<% else %>
+				<h3><%= link_to "Medical Field", signup_path %></h3>
+				<% end %>
 				<p>Medicine is the science and practice of the diagnosis, treatment, and prevention of disease. Medicine encompasses a variety of health care practices evolved.
 				<br>
 				<br>
@@ -35,7 +39,11 @@
 			</section>
 			<section id="engineering">
 				<span class="icon major fa-area-chart accent3"></span>
-				<h3>Engineering Field</h3>
+				<% if current_user %>
+				<h3><%= link_to "Engineering Field", Chatroom.second %></h3>
+				<% else %>
+				<h3><%= link_to "Engineering Field", signup_path %></h3>
+				<% end %>
 				<p>Engineering is the application of mathematics, as well as scientific, economic, social, and practical knowledge to invent, innovate.
 				<br>
 				<br>
@@ -46,7 +54,11 @@
 		<div class="features-row">
 			<section id="computing">
 				<span class="icon major fa-cloud accent4"></span>
-				<h3>Computing & IT</h3>
+				<% if current_user %>
+				<h3><%= link_to "Computing & IT", Chatroom.third %></h3>
+				<% else %>
+				<h3><%= link_to "Computing & IT", signup_path %></h3>
+				<% end %>
 				<p>Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers.
 				<br>
 				<br>
@@ -55,6 +67,11 @@
 			</section>
 			<section  id="accounting">
 				<span class="icon major fa-lock accent5"></span>
+				<% if current_user %>
+				<h3><%= link_to "Accounting", Chatroom.fourth %></h3>
+				<% else %>
+				<h3><%= link_to "Accounting", signup_path %></h3>
+				<% end %>
 				<h3>Accounting </h3> 
 				<p>Accounting or accountancy is the measurement, processing, and communication of financial information about economic entities such as businesses and corporations
 				<br>
