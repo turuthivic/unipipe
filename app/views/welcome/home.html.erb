@@ -5,8 +5,12 @@
   <p>This is an online university pocket platform.</p>
   <p>Here You can discuss any academic related field you are Interested in.</p>
   <ul class="actions">
+ 	<% if current_user %>
+ 	<li><%= link_to "Chatrooms", chatrooms_path, :class => "button" %></li>
+ 	<% else %>
     <li><%= link_to "Sign Up", signup_path, :class => "button special" %></li>
     <li><%= link_to "Learn More", chatrooms_path, :class => "button" %></li>
+    <% end %>
   </ul>
 </section>
 
